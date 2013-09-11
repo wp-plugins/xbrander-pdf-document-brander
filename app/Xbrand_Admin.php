@@ -57,7 +57,7 @@ class Xbrand_Admin extends Xbrand_Base
 
 	public static function addToHead()
 	{
-		echo '<link rel="stylesheet" href="'.self::$plugin_url.'/includes/style_admin.css" type="text/css" media="all" />';
+		echo '<link rel="stylesheet" href="'.XBRAND_BASE_URL.'/includes/style_admin.css" type="text/css" media="all" />';
 	}
 
 	public static function displayView()

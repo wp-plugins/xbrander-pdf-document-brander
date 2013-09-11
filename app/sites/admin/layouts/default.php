@@ -1,8 +1,8 @@
-<script type="text/javascript" src="<?= self::$plugin_url ?>/includes/xbrander_admin.js"></script>
+<script type="text/javascript" src="<?= XBRAND_BASE_URL ?>/includes/xbrander_admin.js"></script>
 
 <div id="xbrand_admin">
 
-	<h1 style="margin: 5px;"><img src="<?= self::$plugin_url ?>/includes/images/xbrander_logo.png" width="159" height="41" alt="xBrander" title="xBrander" border="0" /><span style="font-size: 12px;"> v<?php echo XBRAND_VERSION ?></span></h1>
+	<h1 style="margin: 5px;"><img src="<?= XBRAND_BASE_URL ?>/includes/images/xbrander_logo.png" width="159" height="41" alt="xBrander" title="xBrander" border="0" /><span style="font-size: 12px;"> v<?php echo XBRAND_VERSION ?></span></h1>
 
 	<table id="xbrand_layout_table" style="width: 800px;">
 	<tr>

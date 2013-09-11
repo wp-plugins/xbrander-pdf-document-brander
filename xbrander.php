@@ -39,6 +39,7 @@ define('XBRAND_APP_PATH',	XBRAND_PATH.'/app');
 
 $upload_dir = wp_upload_dir();
 
+define('XBRAND_BASE_URL',		plugin_dir_url(__FILE__));
 define('XBRAND_UPLOAD_PATH',	rtrim($upload_dir['basedir'], '/').'/brandable_pdfs/');
 
 if (is_admin())
@@ -63,7 +64,7 @@ if (is_admin())
 
 	function Xbrand_addAdminMenu()
 	{
-		add_menu_page('xBrander', 'xBrander', 'update_core', 'xbrander', 'Xbrand_displayView', plugin_dir_url(__FILE__).'/includes/icons/xbrander-icon.png');
+		add_menu_page('xBrander', 'xBrander', 'update_core', 'xbrander', 'Xbrand_displayView', XBRAND_BASE_URL.'/includes/icons/xbrander-icon.png');
 	}
 
 	function Xbrand_activatePlugin()
@@ -102,11 +103,10 @@ else
 
 	function Xbrand_addToHead()
 	{
-		$plugin_url	= plugin_dir_url(__FILE__);
 		$ajax_url	= admin_url('admin-ajax.php');
 
 		echo '
-<link rel="stylesheet" href="'.$plugin_url.'/includes/style_public.css" type="text/css" media="all" />
+<link rel="stylesheet" href="'.XBRAND_BASE_URL.'/includes/style_public.css" type="text/css" media="all" />
 <script src="'.$plugin_url.'includes/xbrander_public.js"></script>
 <script type="text/javascript">
 var xbrand_ajax_url = "'.$ajax_url.'";

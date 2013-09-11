@@ -27,7 +27,7 @@ class Xbrand_Base
 			'file'	=> $wpdb->base_prefix.'xbrand_file'
 			);
 
-			self::$plugin_url = plugins_url().'/'.self::$name;
+			self::$plugin_url = XBRAND_BASE_URL;
 		}
 	}
 
