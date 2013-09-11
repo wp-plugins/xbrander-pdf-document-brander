@@ -1,0 +1,22 @@
+
+.xb_download_button {
+
+}
+
+.xb_download_button label {
+	text-align: right;
+	font-weight: bold;
+	margin: 0 5px 5px 0;
+}
+
+.xb_download_button .xb_form_row {
+	margin: 0 5px 5px 0;
+}
+
+.xb_download_button .xb_button_row {
+
+}
+
+.xb_download_button input {
+	width: 125px;
+}
