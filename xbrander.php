@@ -10,7 +10,7 @@ Requires at least: 3.0
 Tested up to: 3.6
 Stable tag: stable
 License: GPLv2 or later
-Version: 1.3
+Version: 1.4
  */
 
 /**
@@ -32,7 +32,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 */
 
-define('XBRAND_VERSION',	'1.3');
+define('XBRAND_VERSION',	'1.4');
 
 define('XBRAND_PATH',		dirname(__FILE__));
 define('XBRAND_APP_PATH',	XBRAND_PATH.'/app');
@@ -107,10 +107,10 @@ else
 
 		echo '
 <link rel="stylesheet" href="'.XBRAND_BASE_URL.'/includes/style_public.css" type="text/css" media="all" />
-<script src="'.$plugin_url.'includes/xbrander_public.js"></script>
+<script src="'.XBRAND_BASE_URL.'/includes/xbrander_public.js"></script>
 <script type="text/javascript">
 var xbrand_ajax_url = "'.$ajax_url.'";
-var xbrand_plugin_url = "'.$plugin_url.'";
+var xbrand_plugin_url = "'.XBRAND_BASE_URL.'";
 </script>
 		';
 	}
