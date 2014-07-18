@@ -9,7 +9,6 @@ $file_list = $wpdb->get_results('SELECT * FROM '.self::$table['file'].' ORDER BY
 ?>
 	<div class="xbrand_button_bar" style="padding-bottom: 10px;">
 		<!-- <input type="button" value=" Upload New File " onclick="window.location.href='admin.php?page=<?php echo self::$name ?>&action=file_edit'" class="action" /> -->
-		<p>Click the file title or name to edit search and replace attributes.</p>
 	</div>
 
 	<table class="xbrand_list_table" cellspacing="1" cellpadding="0">

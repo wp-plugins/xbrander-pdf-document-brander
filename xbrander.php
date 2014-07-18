@@ -10,7 +10,7 @@ Requires at least: 3.0
 Tested up to: 3.6
 Stable tag: stable
 License: GPLv2 or later
-Version: 1.4
+Version: 1.5
  */
 
 /**
@@ -32,7 +32,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 */
 
-define('XBRAND_VERSION',	'1.4');
+define('XBRAND_VERSION',	'1.5');
 
 define('XBRAND_PATH',		dirname(__FILE__));
 define('XBRAND_APP_PATH',	XBRAND_PATH.'/app');
